@@ -13,7 +13,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.regex.Pattern;
+
 public class CreateAccount extends AppCompatActivity {
+    //pattern for password check
+    private static final Pattern PASSWORD_PATTERN =
+            Pattern.compile("^"+
+                    "(?=.*[0-9])"+  //at least 1 digit
+                    "(?=.*[a-z])"+  //at least 1 lower case
+                    "(?=.*[A-Z])"+  //at least 1 upper case
+                    ".{8}"+         //at least 8 characters
+                    "$");
 
     //creating objects for editText and button
     private EditText emailText, passwordText, reenterPasswordText;
@@ -76,14 +86,15 @@ public class CreateAccount extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if(s.length()>=8)
+                String password = passwordText.getText().toString();
+                if(!PASSWORD_PATTERN.matcher(password).matches())
                 {
-                    passwordText.setError(null);
+                    passwordText.setError("INCORRECT FORMAT");
                 }
                 else
                 {
+                    passwordText.setError(null);
 
-                    passwordText.setError("INCORRECT FORMAT");
                 }
 
             }

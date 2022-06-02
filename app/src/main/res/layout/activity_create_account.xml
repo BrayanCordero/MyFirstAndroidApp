@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount">
+
+    <TextView
+        android:id="@+id/email_header"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="77dp"
+        android:text="@string/email_header"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="263dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/email_box"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_header" />
+
+    <TextView
+        android:id="@+id/password_header"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/password_header"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_address" />
+
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="263dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_header" />
+
+    <TextView
+        android:id="@+id/password_header2"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/password_header2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_password" />
+
+    <EditText
+        android:id="@+id/reenter_password"
+        android:layout_width="263dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_header2" />
+
+    <TextView
+        android:id="@+id/instructions_password"
+        android:layout_width="265dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/password_instructions"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reenter_password" />
+
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="14dp"
+
+        android:text="@string/button_text"
+        android:textSize="25dp"
+        android:enabled="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructions_password" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MyFirstAndroidApp</string>
+    <string name="green_flag">Green Flag customers can create an account to access </string>
+    <string name="create_account">Create an Account</string>
+    <string name="check_mark">checkmark image</string>
+    <string name="check_text1">Car health updates</string>
+    <string name="check_text2">Request a rescue online</string>
+    <string name="check_text3">Policy information</string>
+    <string name="green_flag_logo">Logo image</string>
+    <string name="create_account_activity">Create Account Activity</string>
+    <string name="email_box">email@address.com</string>
+    <string name="email_header">Enter Email</string>
+    <string name="password_header">Enter Password</string>
+    <string name="password_box">Password Box</string>
+    <string name="password_header2">Confirm Password</string>
+    <string name="confirm_box">Confirm Box</string>
+    <string name="button_text">CREATE ACCOUNT</string>
+    <string name="password_instructions">Your password should contain a minimum of 8 characters
+    and contain at least one number, one uppercase and one lowercase letter. You may use special characters.</string>
 </resources>

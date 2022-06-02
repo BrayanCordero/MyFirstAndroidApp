@@ -4,15 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_width="260dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/green_flag"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <Button
+        android:id="@+id/create_account"
+        android:onClick="launchCreateAccount"
+        android:backgroundTint="@color/green"
+        android:layout_width="305dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/create_account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/check_mark"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="328dp"
+        android:contentDescription="@string/check_mark"
+        app:layout_constraintBottom_toTopOf="@+id/create_account"
+        app:layout_constraintEnd_toStartOf="@+id/check_text1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/tick" />
+
+    <TextView
+        android:id="@+id/check_text1"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="323dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/check_text1"
+        app:layout_constraintBottom_toTopOf="@+id/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/check_mark"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/check_mark2"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/check_mark"
+        app:layout_constraintEnd_toStartOf="@+id/check_text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_mark"
+        app:srcCompat="@drawable/tick" />
+
+    <TextView
+        android:id="@+id/check_text2"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/check_text2"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/check_mark2"
+        app:layout_constraintTop_toBottomOf="@+id/check_text1" />
+
+    <ImageView
+        android:id="@+id/check_mark3"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/check_mark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_mark2"
+        app:srcCompat="@drawable/tick" />
+
+    <TextView
+        android:id="@+id/check_text3"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_text3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/check_mark3"
+        app:layout_constraintTop_toBottomOf="@+id/check_text2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/green_flag_logo"
+        android:layout_width="333dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_green_flag" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
